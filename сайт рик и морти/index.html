@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty Characters</h1>
+    </header>
+    
+    <main>
+        <div id="filters">
+            <input type="text" id="search" placeholder="Search characters...">
+            <select id="status-filter">
+                <option value="">All Statuses</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <select id="gender-filter">
+                <option value="">All Genders</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+        
+        <div id="characters-container" class="characters-grid"></div>
+        
+        <div id="pagination">
+            <button id="prev-btn" disabled>Previous</button>
+            <span id="page-info">Page 1 of 1</span>
+            <button id="next-btn" disabled>Next</button>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Data from <a href="https://rickandmortyapi.com/" target="_blank">The Rick and Morty API</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
